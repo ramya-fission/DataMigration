@@ -4,9 +4,6 @@ import uuid
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-
-AWS_ACCESS_KEY_ID = ""
-AWS_SECRET_ACCESS_KEY = ""
 S3_BUCKET_NAME = "rh-data-migration-json-data"
 
 

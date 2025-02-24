@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import map_fields
+from .views import map_fields, generate_account_mapping
 
 urlpatterns = [
     path('admin/', admin.site.urls),
         path("map-fields/", map_fields, name="map_fields"),
+         path("generate-account-mapping/", generate_account_mapping, name="generate_account_mapping"),
+
 
 ]
 
